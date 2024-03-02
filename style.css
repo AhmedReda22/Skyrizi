@@ -1,0 +1,112 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2.main-heading {
+    border-left: 4px solid #ff4460;
+    padding: 8px 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* Adjusted to remove extra space */
+}
+
+.main-container h3 {
+    font-weight: normal;
+    cursor: url('images/Skyrizi_Logo.png'), auto;
+}
+
+.scratch-container {
+    width: 100vw;
+    /* Changed to viewport width */
+    height: 100vh;
+    /* Changed to viewport height */
+    border-radius: 0;
+    /* Removed border-radius */
+    overflow: hidden;
+    position: relative;
+}
+
+.scratch-card {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: default;
+}
+
+canvas {
+    position: absolute;
+    cursor: grabbing;
+}
+
+img {
+    width: 100%;
+    background-position: center;
+}
+
+#resetButton {
+    color: #F9E009;
+    background-color: #F01639;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    font-size: 30px;
+    z-index: inherit;
+}
+#resetButton:hover{
+    color: #fff;
+    background-color: #d52d49;
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    border-radius: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: black; /* Set background color to black to cover the screen */
+}
+
+#closeButton{
+    color: #F9E009;
+    background-color: #F01639;
+}
+#closeButton:hover{
+    color: #fff;
+    background-color: #d52d49;
+}  
+video {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
